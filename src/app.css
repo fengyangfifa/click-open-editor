@@ -1,0 +1,5 @@
+.count {
+  color: aquamarine;
+  flex: 1;
+  animation: ease-in-out;
+}

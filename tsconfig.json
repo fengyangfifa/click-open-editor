@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es5",
+    "sourceMap": true,
+    "jsx": "react-jsx", // 在 .tsx 文件中不用手动导入 React
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@": ["src"] // 配置@/* 指向 src/*，避免 error
+    },
+    "lib": ["DOM", "ESNext"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}

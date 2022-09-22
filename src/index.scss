@@ -1,0 +1,10 @@
+@import "normalize.css";
+
+:root {
+  --mainColor: #12345678;
+}
+
+body {
+  color: var(--mainColor);
+  font-family: system-ui;
+}
