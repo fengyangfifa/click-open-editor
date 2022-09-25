@@ -24,6 +24,12 @@ export const ClickOpenEditor = (props: ClickOpenEditorProps) => {
     if (source) {
       const url = getUrlSchemeToSource(source, editor);
       window.open(url);
+
+      // 删除当前 target 的 data-click-open-editor 属性
+      if (target instanceof HTMLElement) {
+        delete target.dataset.clickOpenEditor;
+      }
+      setState(State.IDLE);
     }
   }, [editor, state, target]);
 
