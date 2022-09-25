@@ -4,21 +4,25 @@
   "description": "构建 react 工作流",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx only-allow npm",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.development.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fengyangfifa/react-workflow.git"
+    "url": "git@github.com:fengyangfifa/click-open-editor.git"
   },
+  "files": [
+    "src"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fengyangfifa/react-workflow/issues"
+    "url": "https://github.com/fengyangfifa/click-open-editor/issues"
   },
-  "homepage": "https://github.com/fengyangfifa/react-workflow#readme",
+  "homepage": "https://github.com/fengyangfifa/click-open-editor#readme",
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@babel/plugin-transform-runtime": "^7.18.9",

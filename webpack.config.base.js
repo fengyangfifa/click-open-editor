@@ -53,7 +53,7 @@ module.exports.getStyleLoaders = (cssOptions = {}, isDevelopment = true, preProc
 };
 
 module.exports.baseConf = {
-  entry: "./src/index.tsx",
+  entry: "./examples/index.tsx",
   module: {
     rules: [
       {
@@ -91,7 +91,7 @@ module.exports.baseConf = {
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", "..."],
     alias: {
-      "@": path.resolve(__dirname, "src")
+      "@": path.resolve(__dirname, "examples")
     }
   },
   output: {

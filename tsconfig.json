@@ -13,10 +13,10 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@": ["src"] // 配置@/* 指向 src/*，避免 error
+      "@/*": ["examples/*"] // 配置@/* 指向 src/*，避免 error
     },
-    "lib": ["DOM", "ESNext"]
+    "lib": ["DOM", "ESNext", "DOM.Iterable"]
   },
   "exclude": ["node_modules"],
-  "include": ["src"]
+  "include": ["src", "examples"]
 }

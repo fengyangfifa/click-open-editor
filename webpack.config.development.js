@@ -1,4 +1,3 @@
-const path = require("path");
 const { merge } = require("webpack-merge");
 const getCSSModuleLocalIdent = require("react-dev-utils/getCSSModuleLocalIdent");
 
@@ -49,9 +48,11 @@ module.exports = merge(baseConf, {
     ]
   },
   devServer: {
-    static: path.resolve(__dirname, "dist"),
     hot: true,
     compress: true,
-    port: 3000
+    port: 3000,
+    client: {
+      progress: true
+    }
   }
 });

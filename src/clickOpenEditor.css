@@ -1,0 +1,6 @@
+[data-click-open-editor] {
+    cursor: context-menu !important;
+    outline: auto 1px;
+    /*noinspection CssOverwrittenProperties*/
+    outline: -webkit-focus-ring-color auto 1px !important;
+}

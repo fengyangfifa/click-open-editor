@@ -13,7 +13,9 @@
     "quotes": ["warn", "double"],
     "semi": ["warn", "always"],
     "eol-last": "error",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   },
   "parserOptions": {
     "ecmaVersion": "latest",
