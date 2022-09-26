@@ -1,9 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { getSourceForElement, getUrlSchemeToSource } from "./utils";
+import {
+  getSourceForElement,
+  getUrlSchemeToSource,
+  dynamicCreateStyle,
+  deleteStyle
+} from "./utils";
 import { Editors, State } from "./types";
-
-import "./clickOpenEditor.css";
 
 interface ClickOpenEditorProps {
   editor?: Editors;
@@ -11,6 +14,7 @@ interface ClickOpenEditorProps {
 
 export const ClickOpenEditor = (props: ClickOpenEditorProps) => {
   const { editor = "webstorm" } = props;
+
   const [state, setState] = useState<State>(State.IDLE);
   const [target, setTarget] = useState<EventTarget | null>(null);
 
@@ -89,6 +93,14 @@ export const ClickOpenEditor = (props: ClickOpenEditorProps) => {
       window.removeEventListener("mousemove", handleMouseMove, { capture: true });
     };
   }, [editor, handleClick, handleKeyDown, handleKeyUp, handleMouseMove]);
+
+  useEffect(() => {
+    dynamicCreateStyle();
+
+    return () => {
+      deleteStyle("click-open-editor");
+    };
+  }, []);
 
   return null;
 };

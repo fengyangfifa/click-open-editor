@@ -28,3 +28,27 @@ export function getSourceForElement(element: EventTarget) {
 
   console.warn("Couldn't find a React instance for the element", element);
 }
+
+export function dynamicCreateStyle() {
+  const style = `
+    [data-click-open-editor] {
+      cursor: context-menu !important;
+      outline: auto 1px;
+      outline: -webkit-focus-ring-color auto 1px !important;
+    }
+  `;
+
+  const element = document.createElement("style");
+  element.id = "click-open-editor";
+  element.innerHTML = style;
+
+  document.getElementsByTagName("head").item(0)?.appendChild(element);
+}
+
+export function deleteStyle(id: string) {
+  const element = document.getElementById(id);
+
+  if (element && element.tagName === "STYLE") {
+    element.parentElement?.removeChild(element);
+  }
+}

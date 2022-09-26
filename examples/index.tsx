@@ -13,7 +13,7 @@ function Index() {
         <App />
       </Suspense>
       <App2 />
-      <ClickOpenEditor editor={"webstorm"} />
+      <ClickOpenEditor />
     </div>
   );
 }
