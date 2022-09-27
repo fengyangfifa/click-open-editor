@@ -15,4 +15,8 @@ enum State {
   HOVER = "HOVER"
 }
 
-export { Source, Instance, Editors, State };
+interface ClickOpenEditorProps {
+  editor?: Editors;
+}
+
+export { Source, Instance, Editors, State, ClickOpenEditorProps };

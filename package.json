@@ -1,7 +1,7 @@
 {
-  "name": "react-workflow",
+  "name": "click-open-editor",
   "version": "1.0.0",
-  "description": "构建 react 工作流",
+  "description": "Option+Click React components in your browser to fast open the source in editor",
   "main": "./src/index.tsx",
   "scripts": {
     "preinstall": "npx only-allow npm",

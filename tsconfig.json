@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "module": "ESNext",
-    "target": "es5",
-    "sourceMap": true,
+    "target": "ES6",
+    "sourceMap": false,
     "jsx": "react-jsx", // 在 .tsx 文件中不用手动导入 React
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -15,7 +15,9 @@
     "paths": {
       "@/*": ["examples/*"] // 配置@/* 指向 src/*，避免 error
     },
-    "lib": ["DOM", "ESNext", "DOM.Iterable"]
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
+    "outDir": "dist",
+    "declaration": true,
   },
   "exclude": ["node_modules"],
   "include": ["src", "examples"]

@@ -6,11 +6,7 @@ import {
   dynamicCreateStyle,
   deleteStyle
 } from "./utils";
-import { Editors, State } from "./types";
-
-interface ClickOpenEditorProps {
-  editor?: Editors;
-}
+import { State, ClickOpenEditorProps } from "./types";
 
 export const ClickOpenEditor = (props: ClickOpenEditorProps) => {
   const { editor = "webstorm" } = props;

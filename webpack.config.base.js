@@ -102,7 +102,7 @@ module.exports.baseConf = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "react-workflow",
+      title: "click-open-editor-example",
       template: "public/index.html"
     }),
     new ESLintPlugin({
