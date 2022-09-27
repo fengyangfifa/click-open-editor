@@ -2,7 +2,7 @@
   "name": "react-workflow",
   "version": "1.0.0",
   "description": "构建 react 工作流",
-  "main": "index.js",
+  "main": "./src/index.tsx",
   "scripts": {
     "preinstall": "npx only-allow npm",
     "test": "echo \"Error: no test specified\" && exit 1",
