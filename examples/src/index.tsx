@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App2 from "./app2";
 
 import "./index.scss";
-import { ClickOpenEditor } from "../dist/src";
+import { ClickOpenEditor } from "../../src";
 const App = React.lazy(() => import(/* webpackChunkName: "app" */ "./app"));
 
 function Index() {

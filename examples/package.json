@@ -66,6 +66,12 @@
     "webpack-dev-server": "^4.9.3",
     "webpack-merge": "^5.8.0"
   },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.18.9",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
