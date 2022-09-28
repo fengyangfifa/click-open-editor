@@ -1,6 +1,6 @@
 # ClickOpenEditor
 
-在浏览器中按住 `Option` 键后点击一个组件, 将会自动打开你的 `editor`, 跳转到该组件对应的文件位置.
+`React`项目, 在浏览器中按住 `Option` 键后点击一个组件, 将会自动打开你的 `editor`, 跳转到该组件对应的文件位置.
 
 ## 支持的构建工具或框架
 
@@ -71,20 +71,47 @@ npm install click-open-editor
 git clone git@github.com:fengyangfifa/click-open-editor.git
 ```
 
-打开这个项目目录
-
+1、安装外层依赖
 ```shell
 cd click-open-editor
 ```
-
-安装依赖
-
 ```shell
 npm install
 ```
 
-运行
+2、安装内层依赖
+```shell
+cd examples
+```
+```shell
+npm install
+```
 
+3、返回上一层目录(`click-open-editor`目录)
+```shell
+cd ..
+```
+
+4、建立软连接
+```shell
+npm link ./examples/node_modules/react
+```
+
+5、切换到内层目录
+```shell
+cd examples
+```
+
+6、运行
 ```shell
 npm run dev
+```
+
+7、构建
+```shell
+# 返回上一层目录(click-open-editor目录)
+cd ..
+```
+```shell
+npm run build
 ```
