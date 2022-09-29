@@ -29,6 +29,8 @@ export function getSourceForElement(element: EventTarget) {
   console.warn("Couldn't find a React instance for the element", element);
 }
 
+export const ELEMENT_STYLE_ID = "click-open-editor";
+
 export function dynamicCreateStyle() {
   const style = `
     [data-click-open-editor] {
@@ -39,7 +41,7 @@ export function dynamicCreateStyle() {
   `;
 
   const element = document.createElement("style");
-  element.id = "click-open-editor";
+  element.id = ELEMENT_STYLE_ID;
   element.innerHTML = style;
 
   document.getElementsByTagName("head").item(0)?.appendChild(element);

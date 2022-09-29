@@ -11,14 +11,11 @@
     "strict": true,
     "strictNullChecks": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["examples/*"] // 配置@/* 指向 src/*，避免 error
-    },
+    "baseUrl": "..",
     "lib": ["DOM", "ESNext", "DOM.Iterable"],
     "outDir": "dist",
-    "declaration": true,
+    "declaration": true
   },
   "exclude": ["node_modules"],
-  "include": ["examples"]
+  "include": ["src"]
 }
