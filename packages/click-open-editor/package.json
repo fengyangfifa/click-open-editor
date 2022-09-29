@@ -2,7 +2,8 @@
   "name": "click-open-editor",
   "version": "1.0.0",
   "description": "Option+Click React components in your browser to fast open the source in editor",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -13,7 +14,7 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": ["react", "editor", "devtools"],
   "author": "",
   "license": "ISC",
   "bugs": {

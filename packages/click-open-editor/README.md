@@ -1,6 +1,6 @@
 # ClickOpenEditor
 
-在浏览器中按住 `Option` 键后点击一个组件, 将会自动打开你的 `editor`, 跳转到该组件对应的文件位置.
+开发`React`项目时, 在浏览器中按住`Option`键后, 移动鼠标选中一个元素点击后, 将会自动打开你的`editor`, 跳转到该元素对应的文件位置.
 
 ## 支持的构建工具或框架
 
@@ -20,10 +20,10 @@
 
 ## 构建
 
-使用 `production` 模式构建项目时, 自动 **tree-shaking**.
+使用`production`模式构建项目时, 自动 **tree-shaking**.
 
-即使 `click-open-editor` 安装在项目的 `dependencies` 依赖中, 在 `production`.
-模式构建时 [tree-shaking](https://webpack.docschina.org/guides/tree-shaking/#root) 将会移除 `click-open-editor`.
+即使`click-open-editor`安装在项目的`dependencies`依赖中, 在`production`
+模式构建时 [tree-shaking](https://webpack.docschina.org/guides/tree-shaking/#root) 将会移除`click-open-editor`.
 
 ## 安装
 
@@ -56,7 +56,7 @@ npm install click-open-editor
 
 默认打开 [webstorm](https://www.jetbrains.com/webstorm/).
 
-如果你想使用 [vscode](https://code.visualstudio.com/), 你可以设置 `editor`:
+如果你想使用 [vscode](https://code.visualstudio.com/), 你可以设置`editor`:
 
 ```diff
 -<ClickOpenEditor />
@@ -71,20 +71,29 @@ npm install click-open-editor
 git clone git@github.com:fengyangfifa/click-open-editor.git
 ```
 
-打开这个项目目录
+1、安装依赖
 
 ```shell
 cd click-open-editor
 ```
 
-安装依赖
-
 ```shell
 npm install
 ```
 
-运行
+2、运行
 
 ```shell
 npm run dev
+```
+
+3、构建
+
+```shell
+# 进入包目录
+cd packages/click-open-editor
+```
+
+```shell
+npm run build
 ```
