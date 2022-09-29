@@ -4,7 +4,8 @@ import {
   getSourceForElement,
   getUrlSchemeToSource,
   dynamicCreateStyle,
-  deleteStyle
+  deleteStyle,
+  ELEMENT_STYLE_ID
 } from "./utils";
 import { State, ClickOpenEditorProps } from "./types";
 
@@ -94,7 +95,7 @@ export const ClickOpenEditor = (props: ClickOpenEditorProps) => {
     dynamicCreateStyle();
 
     return () => {
-      deleteStyle("click-open-editor");
+      deleteStyle(ELEMENT_STYLE_ID);
     };
   }, []);
 
