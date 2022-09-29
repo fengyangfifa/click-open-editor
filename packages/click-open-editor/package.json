@@ -1,0 +1,26 @@
+{
+  "name": "click-open-editor",
+  "version": "1.0.0",
+  "description": "Option+Click React components in your browser to fast open the source in editor",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fengyangfifa/click-open-editor.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengyangfifa/click-open-editor/issues"
+  },
+  "homepage": "https://github.com/fengyangfifa/click-open-editor#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}

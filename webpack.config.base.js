@@ -36,7 +36,7 @@ module.exports.getStyleLoaders = (cssOptions = {}, isDevelopment = true, preProc
       {
         loader: require.resolve("resolve-url-loader"),
         options: {
-          root: path.resolve(__dirname, "src"),
+          root: path.resolve(__dirname, "examples"),
           sourceMap: true
         }
       },
