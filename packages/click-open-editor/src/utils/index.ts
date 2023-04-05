@@ -20,9 +20,31 @@ export function getUrlSchemeToSource(source: Source, editor: Editors) {
   }
 }
 
+export function getReactInstancesForElement(element: EventTarget) {
+  const instances = new Set<Instance>();
+  let instance = getReactInstanceForElement(element);
+
+  while (instance) {
+    instances.add(instance);
+
+    instance = instance._debugOwner;
+  }
+
+  return Array.from(instances);
+}
+
 export function getSourceForElement(element: EventTarget) {
-  const instance = getReactInstanceForElement(element);
-  const source = getSourceForInstance(instance || {});
+  const instances = getReactInstancesForElement(element);
+  let source: Source | undefined;
+
+  for (let i = 0; i < instances.length; i++) {
+    const instance = instances[i];
+    source = getSourceForInstance(instance || {});
+
+    if (source) {
+      break;
+    }
+  }
 
   if (source) return source;
 

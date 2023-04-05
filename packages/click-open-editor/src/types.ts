@@ -5,6 +5,7 @@ interface Source {
 }
 
 interface Instance {
+  _debugOwner?: Instance;
   _debugSource?: Source;
 }
 

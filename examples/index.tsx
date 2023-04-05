@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import App2 from "./app2";
+import "antd/dist/reset.css";
 
 import "./index.scss";
 import { ClickOpenEditor } from "../packages/click-open-editor/src";
