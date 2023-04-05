@@ -1,5 +1,8 @@
 # ClickOpenEditor
 
+[![npm version](https://img.shields.io/npm/v/click-open-editor.svg?logo=npm)](https://www.npmjs.com/package/click-open-editor)
+[![npm downloads](https://img.shields.io/npm/dw/click-open-editor.svg?logo=npm)](https://www.npmjs.com/package/click-open-editor)
+
 开发`React`项目时, 在浏览器中按住`Option`键后, 移动鼠标选中一个元素点击后, 将会自动打开你的`editor`, 跳转到该元素对应的文件位置.
 
 ## 支持的构建工具或框架
