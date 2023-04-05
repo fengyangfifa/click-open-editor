@@ -1,6 +1,6 @@
 {
   "name": "click-open-editor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Option+Click React components in your browser to fast open the source in editor",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
